@@ -19,7 +19,7 @@ export default function page() {
   }, []);
 
   return (
-    <div className="min-h-screen w-screen font-poppins bg-white text-black dark:bg-main dark:text-white pl-10 pr-10">
+    <div className="min-h-screen w-screen font-poppins bg-white text-black dark:bg-main dark:text-white pl-11 pr-11">
       {isLoading ? (
         <Loading />
       ) : (

@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <section
       id="Home"
-      className="relative flex flex-col-reverse lg:flex-row justify-between items-center mt-5 overflow-hidden"
+      className="relative flex flex-col-reverse lg:flex-row justify-between items-center  overflow-hidden"
     >
       {/* Right Section */}
       <div className="Right-Info z-10 flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-2">
@@ -95,7 +95,7 @@ const Home = () => {
       </div>
 
       {/* Left Section */}
-      <div className="Left-Img relative mt-10 lg:mt-0 mb-40 lg:mb-0 z-10">
+      <div className="Left-Img relative lg:mt-10 lg:mb-40 mb-0 z-10">
         <svg
           viewBox="0 0 200 200"
           className="w-96 h-96 z-0 lg:w-80 lg:h-80"
