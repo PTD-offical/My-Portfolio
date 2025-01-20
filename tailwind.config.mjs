@@ -5,13 +5,22 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'media', // Use class strategy for toggling dark mode manually
   theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+    // Fonts
+    fontFamily: {
+      'roboto': ['Roboto', 'sans-serif'],
+      'poppins': ['"Poppins"', 'sans-serif']
     },
+    // Colors
+    colors: {
+      transparent: 'transparent',
+      'white': '#FFFFFF',
+      'main': '#2D2C2C',
+      'accent': '#27A5DD',
+      'black': '#1F1E1E',
+    },
+    extend: {},
   },
   plugins: [],
 };
