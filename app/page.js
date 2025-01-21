@@ -2,11 +2,13 @@
 
 import React, { useState, useEffect } from "react";
 import Loading from "./loading"; // Adjust the path if necessary
-import Header from "./Components/Header.js";
-import HomeSec from "./pages/Home/page.js";
+import Header from "./Components/Header";
+import HomeSec from "./pages/Home/page";
 import About from "./pages/About/page";
 import Skills from "./pages/Skills/page"
+import Projects from "./pages/Projects/page"
 import ScrollUp from "./Components/ScrollUp"
+import ContactForm from "./pages/Contact/page"
 
 export default function page() {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,18 +23,24 @@ export default function page() {
   }, []);
 
   return (
-    <div className="h-screen w-screen font-poppins text-black dark:bg-main dark:text-white pl-11 pr-11">
+    <div className=" w-screen font-poppins text-black dark:bg-main dark:text-white pl-11 pr-11">
       {isLoading ? (
         <Loading />
       ) : (
         <>
-        <ScrollUp/>
+          <ScrollUp />
           <Header />
           <div className="flex gap-40 flex-col w-full ">
-          
-          <HomeSec />
-          <About/>
-          <Skills/>
+            <HomeSec />
+            <About />
+            <div className="flex gap-[1500]  lg:gap-[900] flex-col">
+
+              <Projects />
+              <Skills />
+            <ContactForm></ContactForm>
+            </div>
+
+            
           </div>
         </>)}
     </div>

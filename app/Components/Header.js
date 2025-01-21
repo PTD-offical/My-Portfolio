@@ -38,9 +38,8 @@ function Header() {
 
       <div className="hidden lg:flex space-x-8 font-roboto">
         <a href="#About">About Me</a>
-        <a href="#Skills">Skills</a>
         <a href="#Projects">Projects</a>
-        <a href="#Blogs">Blogs</a>
+        <a href="#Skills">Skills</a>
         <a href="#Contact">Contact Me</a>
       </div>
 
@@ -86,9 +85,8 @@ function Header() {
               </button>
             </div>
             <a href="#About" onClick={toggleMenu} className="text-lg text-black dark:text-white">About Me</a>
-            <a href="#Skills" onClick={toggleMenu} className="text-lg text-black dark:text-white">Skills</a>
             <a href="#Projects" onClick={toggleMenu} className="text-lg text-black dark:text-white">Projects</a>
-            <a href="#Blogs" onClick={toggleMenu} className="text-lg text-black dark:text-white">Blogs</a>
+            <a href="#Skills" onClick={toggleMenu} className="text-lg text-black dark:text-white">Skills</a>
             <a href="#Contact" onClick={toggleMenu} className="text-lg text-black dark:text-white">Contact Me</a>
           </div>
         </div>
