@@ -34,7 +34,7 @@ export default function page() {
           <div className="flex gap-40 flex-col w-full ">
             <HomeSec />
             <About />
-            <div className="flex gap-[1500]  gap-[1500] flex-col">
+            <div className="flex gap-[1500] flex-col">
 
               <Projects />
               <Skills />
