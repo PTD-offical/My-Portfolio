@@ -9,6 +9,7 @@ import Skills from "./pages/Skills/page"
 import Projects from "./pages/Projects/page"
 import ScrollUp from "./Components/ScrollUp"
 import ContactForm from "./pages/Contact/page"
+import Footer from "./Components/Footer"
 
 export default function page() {
   const [isLoading, setIsLoading] = useState(true);
@@ -37,10 +38,10 @@ export default function page() {
 
               <Projects />
               <Skills />
-            <ContactForm></ContactForm>
+              <ContactForm />
             </div>
+<Footer/>
 
-            
           </div>
         </>)}
     </div>
