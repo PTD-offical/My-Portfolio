@@ -8,13 +8,12 @@
 @tailwind utilities;
 
 html {
-  transition: background-color 0.3s ease, color 0.3s ease;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-color: #2D2C2C;
   }
 
-
-  .ButtonH{
+.ButtonH{
     width: 100px;
     height: 50px;
     background-color: #27A5DD;
@@ -25,5 +24,3 @@ html {
     font-size: 2rem;
   
     } 
-
-

@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section
       id="About"
-      className="relative flex flex-col lg:flex-row justify-between items-center mt-36 pb-28 px-6 overflow-hidden"
+      className="relative flex flex-col lg:flex-row justify-between items-center overflow-hidden"
     >
       {/* Image Section */}
       <div className="flex-shrink-0 mb-8 lg:mb-0 lg:mr-12">
