@@ -36,7 +36,7 @@ function ContactForm() {
     <>
       <section className="bg-gray-100 py-10" id="Contact">
         <div className="max-w-xl mx-auto bg-white text-main dark:bg-main p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold mb-4 text-white text-center">Contact Us</h2>
+          <h2 className="text-2xl font-bold mb-4 text-white text-center">CONTACT ME</h2>
           <form
             id="consultation-form"
             className="feed-form space-y-4"
@@ -87,7 +87,7 @@ function ContactForm() {
 
       {/* Modal Popup */}
       {showModal && (
-        <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
+        <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-black rounded-lg text-white shadow-lg p-6 max-w-sm relative">
             {/* X Button */}
             <button

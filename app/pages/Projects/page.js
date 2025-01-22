@@ -31,7 +31,7 @@ const skillsData = {
   ],
 };
 
-const Projects = () => {
+const Skills = () => {
   const [selectedSkill, setSelectedSkill] = useState("Technical Skills");
 
   const handleButtonClick = (skill) => {
@@ -40,15 +40,14 @@ const Projects = () => {
 
   return (
     <section
-      id="Projects"
-      className="bg-white dark:bg-main flex flex-col gap-10 lg:gap-20 w-full justify-center items-center"
+      id="Skills"
+      className="bg-white dark:bg-main flex flex-col gap-10 lg:gap-20 w-full mb-96 justify-center items-center"
     >
-
       {/* Title and Navigation */}
       <div className="Title w-full max-w-6xl">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <h2 className="text-4xl lg:text-5xl font-bold text-center lg:text-left">
-            MY <span className="text-accent">PROJECTS</span>
+            MY <span className="text-accent">SKILLS</span>
           </h2>
           <div className="flex flex-wrap justify-center lg:justify-end gap-3 lg:gap-5 mt-5 lg:mt-0">
             {Object.keys(skillsData).map((skill) => (
@@ -56,6 +55,7 @@ const Projects = () => {
                 key={skill}
                 name={skill}
                 onClick={() => handleButtonClick(skill)}
+                aria-pressed={selectedSkill === skill}
               />
             ))}
           </div>
@@ -70,32 +70,21 @@ const Projects = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="relative w-full max-w-6xl flex flex-row flex-wrap justify-center">
-        {Object.keys(skillsData).map((skill) => (
-          <div
-            key={skill}
-            className={`absolute inset-0 transition-transform transform duration-700 ease-in-out ${
-              selectedSkill === skill
-                ? "opacity-100 translate-x-0 scale-100 z-10"
-                : "opacity-0 -translate-x-full scale-90 z-0 pointer-events-none"
-            }`}
-          >
-            <div className="w-full bg-white dark:bg-main rounded-lg">
-              <div className='flex flex-wrap justify-center gap-10 items-center'>
-                {skillsData[skill].map((card) => (
-                  <CardSkill
-                    key={card.title}
-                    title={card.title}
-                    description={card.description}
-                  />
-                ))}
-              </div>
-            </div>
+      <div className="w-full max-w-6xl flex flex-row flex-wrap justify-center">
+        <div className="w-full bg-white dark:bg-main rounded-lg">
+          <div className='flex flex-wrap justify-center gap-10 items-center'>
+            {skillsData[selectedSkill].map((card) => (
+              <CardSkill
+                key={card.title}
+                title={card.title}
+                description={card.description}
+              />
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </section>
   );
 };
 
-export default Projects;
+export default Skills;
