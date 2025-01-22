@@ -28,7 +28,7 @@ const ScrollUp = () => {
   };
 
   return (
-    <div className={`fixed bottom-5 right-5 ${isVisible ? "block" : "hidden"} z-50`}>
+    <div className={`fixed bottom-20 right-5 ${isVisible ? "block" : "hidden"} z-50`}>
       <button
         onClick={scrollToTop}
         className="bg-accent text-white rounded-full w-12 h-12 flex items-center justify-center shadow-[0_4px_6px_rgba(0,0,0,0.1)] transition-transform transform hover:scale-110"

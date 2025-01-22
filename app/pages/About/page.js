@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section
       id="About"
-      className="relative flex flex-col lg:flex-row justify-between items-center overflow-hidden"
+      className="relative flex flex-col lg:flex-row justify-between items-center overflow-hidden py-10 lg:py-20"
     >
       {/* Image Section */}
       <div className="flex-shrink-0 mb-8 lg:mb-0 lg:mr-12">
@@ -27,7 +27,7 @@ const About = () => {
           ABOUT <span className="text-accent">ME</span>
         </h2>
         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-          Hi, my name is Mohammad Elkhouly, and I’m passionate about technology,
+          Hi, my name is <span className="font-semibold">Mohammad Elkhouly</span>, and I’m passionate about technology,
           programming, and development. I love working on exciting projects,
           exploring new technologies, and sharing my knowledge with others.
           Recently, I started my own YouTube channel,{" "}

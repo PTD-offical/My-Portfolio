@@ -11,7 +11,7 @@ function Footer() {
         <Image src={logoHeader} alt="Logo" width={130} height={50} className="bg-main rounded-xl" />
       </a>
 
-      <div className="hidden lg:flex space-x-8 font-roboto">
+      <div className="flex space-x-8 font-roboto">
         <a href="#About">About Me</a>
         <a href="#Projects">Projects</a>
         <a href="#Skills">Skills</a>

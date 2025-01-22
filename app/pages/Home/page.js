@@ -17,16 +17,16 @@ const Home = () => {
   return (
     <section
       id="Home"
-      className="relative flex flex-col-reverse lg:flex-row justify-between items-center  overflow-hidden"
+      className="relative flex flex-col-reverse lg:flex-row justify-between items-center overflow-hidden py-10 lg:py-20"
     >
       {/* Right Section */}
-      <div className="Right-Info z-10 flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-2">
-        <h1 className="font-semibold text-4xl lg:text-3xl">
+      <div className="Right-Info z-10 flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-4">
+        <h1 className="font-semibold text-4xl lg:text-5xl">
           <span>Hi, I’m</span>
           <br />
-          <span className="text-accent text-5xl lg:text-4xl">PTD DEV</span>
+          <span className="text-accent text-5xl lg:text-6xl">PTD DEV</span>
         </h1>
-        <p className="font-bold text-4xl lg:text-2xl">
+        <p className="font-bold text-4xl lg:text-3xl">
           <TypeAnimation
             sequence={[
               "Tech Enthusiast.",
@@ -59,6 +59,7 @@ const Home = () => {
           <a
             href="https://www.youtube.com/@ptd4Dev"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-2xl lg:text-3xl"
           >
             <FontAwesomeIcon icon={faYoutube} />
@@ -66,6 +67,7 @@ const Home = () => {
           <a
             href="https://www.instagram.com/ptd_development/"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-2xl lg:text-3xl"
           >
             <FontAwesomeIcon icon={faInstagram} />
@@ -73,6 +75,7 @@ const Home = () => {
           <a
             href="https://www.tiktok.com/@ptd_dev"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-2xl lg:text-3xl"
           >
             <FontAwesomeIcon icon={faTiktok} />
@@ -80,6 +83,7 @@ const Home = () => {
           <a
             href="https://discord.gg/D5hBTTFySX"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-2xl lg:text-3xl"
           >
             <FontAwesomeIcon icon={faDiscord} />
@@ -87,6 +91,7 @@ const Home = () => {
           <a
             href="https://github.com/PTD-offical"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-2xl lg:text-3xl"
           >
             <FontAwesomeIcon icon={faGithub} />
