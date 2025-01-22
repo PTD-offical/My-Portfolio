@@ -29,7 +29,7 @@ export default function Page() {
       ) : (
         <>
           <Header />
-          <div className="flex flex-col w-full gap-10"> {/* Adjusted gap for better spacing */}
+          <div className="flex flex-col w-full gap-20"> {/* Adjusted gap for better spacing */}
             <HomeSec />
             <About />
             <Projects />

@@ -14,6 +14,10 @@ import Image from "next/image";
 import Pic from "../../../public/MyPic.png";
 
 const Home = () => {
+
+  // Resume download
+
+
   return (
     <section
       id="Home"
@@ -21,10 +25,10 @@ const Home = () => {
     >
       {/* Right Section */}
       <div className="Right-Info z-10 flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-4">
-        <h1 className="font-semibold text-4xl lg:text-5xl">
+        <h1 className="font-semibold text-4xl">
           <span>Hi, I’m</span>
           <br />
-          <span className="text-accent text-5xl lg:text-6xl">PTD DEV</span>
+          <span className="text-accent text-5xl ">PTD DEV</span>
         </h1>
         <p className="font-bold text-4xl lg:text-3xl">
           <TypeAnimation
@@ -45,13 +49,18 @@ const Home = () => {
         {/* Buttons */}
         <div className="flex gap-5 mt-7 justify-center lg:justify-start">
           <button className="ButtonH flex items-center justify-around w-[250px] h-[70px] text-2xl lg:w-[190px] lg:h-[50px] lg:text-base">
-            <span className="text-sm lg:text-2xl">Contact</span>{" "}
-            <FontAwesomeIcon className="lg:text-2xl" icon={faPaperPlane} />
+            <a href="#Contact">
+              <span className="text-sm lg:text-2xl">Contact</span>{" "}
+              <FontAwesomeIcon className="lg:text-2xl" icon={faPaperPlane} />
+            </a>
           </button>
-          <button className="ButtonH flex items-center justify-around w-[250px] h-[70px] text-2xl lg:w-[190px] lg:h-[50px] lg:text-base">
-            <span className="text-sm lg:text-2xl">Resume</span>{" "}
-            <FontAwesomeIcon className="lg:text-2xl" icon={faFile} />
-          </button>
+          <a href="/Logo_Page.png" download="logo.png">
+            <button className="ButtonH flex items-center justify-evenly w-[250px] h-[70px] text-2xl lg:w-[190px] lg:h-[50px] lg:text-base">
+              <span className="text-sm lg:text-2xl">Resume</span>
+              <FontAwesomeIcon className="lg:text-2xl" icon={faFile} />
+            </button>
+          </a>
+
         </div>
 
         {/* Social Links */}

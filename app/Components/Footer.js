@@ -1,24 +1,28 @@
-import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes, faSun } from '@fortawesome/free-solid-svg-icons';
 import logoHeader from '../../public/logoHeader.png';
 
 function Footer() {
+  const currentYear = new Date().getFullYear(); // Get the current year dynamically
+
   return (
-    <nav className="flex justify-between items-center pb-5">
-      <a href="#Home">
-        <Image src={logoHeader} alt="Logo" width={130} height={50} className="bg-main rounded-xl" />
+    <footer className="flex justify-between items-center p-5 bg-gray-800 text-white">
+      {/* Logo Section */}
+      <a href="#Home" className="flex items-center">
+        <Image
+          src={logoHeader}
+          alt="Logo"
+          width={130}
+          height={50}
+          className="rounded-xl"
+        />
       </a>
 
-      <div className="flex space-x-8 font-roboto">
-        <a href="#About">About Me</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Skills">Skills</a>
-        <a href="#Contact">Contact Me</a>
-      </div>
 
-</nav>
+      {/* Copyright Section */}
+      <div className="text-sm">
+        &copy; {currentYear} PTD_Dev
+      </div>
+    </footer>
   );
 }
 

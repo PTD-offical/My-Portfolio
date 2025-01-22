@@ -34,7 +34,7 @@ function ContactForm() {
 
   return (
     <>
-      <section className="bg-gray-100 py-10" id="Contact">
+      <section className="Contact bg-gray-100 py-10" id="Contact">
         <div className="max-w-xl mx-auto bg-white text-main dark:bg-main p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-bold mb-4 text-white text-center">CONTACT ME</h2>
           <form
